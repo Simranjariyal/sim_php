@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+    position: relative;
+}
+.cont{
+    background-color: rgb(255, 89, 0);
+    width: 90%;
+  display: flex;
+  flex-direction: column;
+    padding: 3px;
+    margin: auto;
+    border: 3px solid;
+    border-radius: 13px;
+    opacity: 0.9;
+    
+    /* position: fixed;
+    z-index: 1; */
+   
+}
+img.imgg{
+    position: fixed;
+   height: 100%;
+   width: 100%;
+   background-attachment: fixed;
+}
+.cont h1{
+    color: white;
+    align-self: center;
+    
+}
+.cont h5{
+    color: rgb(84, 78, 78);
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+form{
+    
+    margin: auto;
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+button{
+  cursor: pointer;
+  background-color: aqua;
+ align-self: center;
+  border-radius: 7px;
+  max-width: min-content;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+button:hover{
+    color: aliceblue;
+    background-color:rgb(139, 185, 69) ;
+}
+.logo{
+
+display: flex;
+flex-direction: column;
+
+
+}
+@keyframes k{
+    
+   
+}
+img.im{
+height: 120px;
+max-width: min-content;
+align-self: center;
+background-color: aqua;
+margin: auto;
+
+
+
+
+
+
+}
+@keyframes animation{
+    from{transform: translateX(-90px);}
+    to{transform: translate(100px);}
+
+}
+img.im{
+
+animation-name: animation;
+animation-duration: 2s;
+animation-delay: 0.25s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-direction: alternate;
+
+}
+ a{
+   
+    font-family: monospace;
+    color: red;
+    flex-direction: column;
+    margin-left: 0%;
+    font-size:larger;
+    font-weight: 800;
+    cursor: pointer;
+   
+}
+a:hover{
+    color: orangered;
+}
+@keyframes a {
+   0%{
+    background-color: white;
+   } 
+   30%{
+    background-color: black;
+   }
+   80%{
+    background-color: white;
+   }
+   100%{
+    background-color: black;
+   }
+}
+
+#loader{
+    border: 3px solid;
+    border-radius: 4px;
+    width:100%;
+    height: 100%;
+   
+    color: aliceblue;
+    z-index: 999;
+    position:fixed;
+    top:0;
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name:a;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+    
+
+  
+}
+#loader h1{
+    font-family:monospace;
+  font-size: 50px;
+  color: transparent;
+  background:linear-gradient(to right, orange,red);
+  position: absolute;
+  opacity: 0;
+  -webkit-background-clip: text;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+#loader h1:nth-child(2){
+ 
+    animation-delay: 1.5s;
+  
+}
+#loader h1:nth-child(3){
+ 
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+  
+}
+@keyframes anim{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0; 
+    }
+}
